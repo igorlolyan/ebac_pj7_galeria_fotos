@@ -1,57 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>jQuery</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="./main.css">
-  <link rel="shortcut icon" href="./FontEnd M9 - images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./main.css">
+    <title>Galeria de fotos</title>
+
+    <!-- fontes google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Galeria de fotos</h1>
-    <button type="button">Nova imagem</button>
-  </header>
-  <form action="">
-    <h2>Inserir nova imagem</h2>
-    <input type="url" id="imagem-nova" required placeholder="URL da imagem">
-    <button type="submit" id="botao-adicionar">Adicionar</button>
-    <button type="reset" id="botao-cancelar">Cancelar</button>
-  </form>
-  <ul>
-    <li>
-      <img src="./FontEnd M9 - images/images/foto1.jpg" alt="Pintura de um gato">
-      <div class="imglink" >
-        <a href="./FontEnd M9 - images/images/foto1.jpg" target = '_blank'>
-        Ver imagem em tamanho real.
-        </a>
-      </div class="imglink" >
-    </li>
-    <li>
-      <img src="./FontEnd M9 - images/images/foto2.jpg" alt="Pintura de um gato">
-      <div class="imglink" >
-        <a href="./FontEnd M9 - images/images/foto2.jpg" target = '_blank'>
-        Ver imagem em tamanho real.
-        </a>
-      </div class="imglink" >
-    </li>
-    <li>
-      <img src="./FontEnd M9 - images/images/foto3.jpg" alt="Pintura de um gato">
-      <div class="imglink" >
-        <a href="./FontEnd M9 - images/images/foto3.jpg" target = '_blank'>
-        Ver imagem em tamanho real.
-        </a>
-      </div class="imglink" >
-    </li>
-  </ul>
-  
+    <header id="seletorHeader">
+        <h1>Galeria de fotos</h1>
+        <button type="click" id="botaoNovaImagem">Nova Imagem</button>
+    </header>
+    <section id="seletorSection">
+        <h1>Inserir nova imagem</h1>
+        <form>
+            <input type="url" placeholder="Endereço da imagem" required>
+            <button type="submit" id="botaoAdicionar">Adicionar</button>
+            <button type="reset" id="botaoCancelar">Cancelar</button>
+        </form>
+    </section>
+    <ul id="seletorul">
+        <li>
+            <img src="./imagens/foto1.jpg" alt="Pintura de um gato">
+            <div class="overlay"><a href="./imagens/foto1.jpg">Link da imagem em tamanho real</a></div>
+        </li>
+        <li>
+            <img src="./imagens/foto2.jpg" alt="Pintura de um gato">
+            <div class="overlay"><a href="./imagens/foto2.jpg">Link da imagem em tamanho real</a></div>
+        </li>
+        <li>
+            <img src="./imagens/foto3.jpg" alt="Pintura de um gato">
+            <div class="overlay"><a href="./imagens/foto3.jpg">Link da imagem em tamanho real</a></div>
+        </li>
+        <li>
+            <img src="./imagens/foto4.jpg" alt="Pintura de um gato">
+            <div class="overlay"><a href="./imagens/foto4.jpg">Link da imagem em tamanho real</a></div>
+        </li>
+        <li>
+            <img src="./imagens/foto5.jpg" alt="Pintura de um gato">
+            <div class="overlay"><a href="./imagens/foto5.jpg">Link da imagem em tamanho real</a></div>
+        </li>
+    </ul>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
+    <script src="./main.js" ></script>
 </body>
-
 </html>
